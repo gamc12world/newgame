@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp1ba5866rlda"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_4hqty"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmflr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g6611"]
+bg_color = Color(0.265501, 0.139241, 0.0682878, 1)
+skew = Vector2(0.2, 0)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.203287, 0.147497, 0.0675526, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.45826, 0.226365, 0.107026, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_622qq"]
+bg_color = Color(0.500572, 0.32998, 0.201882, 1)
+skew = Vector2(0.2, 0)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.363805, 0.177845, 0.120245, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.403693, 0.293358, 0.0681546, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlt6g"]
+bg_color = Color(0.280827, 0.156032, 0.0551794, 1)
+skew = Vector2(0.2, 0)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.538821, 0.496359, 0.200459, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 16
+shadow_color = Color(0.244833, 0.199029, 0.0991336, 0.6)
+shadow_size = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4hqty")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 555.0
+offset_right = 1151.0
+offset_bottom = 637.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bmflr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g6611")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_622qq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xlt6g")
+text = "Play"
